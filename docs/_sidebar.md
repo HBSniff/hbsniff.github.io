@@ -6,8 +6,8 @@
 * [For developers](developers.md)
 
 * Smells and Metrics
-* [Inter-Entity Smells](interEntity.md)
 * [Intra-Entity and Application Smells](intraEntity.md)
+* [Inter-Entity Smells](interEntity.md)
 * [Mapping Metrics](mappingMetrics.md)
 
 * Parsers
