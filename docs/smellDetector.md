@@ -1,0 +1,5 @@
+# SmellDetector
+
+# Attributes
+
+# Methods
