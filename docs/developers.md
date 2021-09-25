@@ -27,7 +27,7 @@ To implement different metrics, we suggest following the architecture of smell d
 Please refer to the first 2 ```String``` constants of ``` io.github.hzjdev.hbsniff.utils.Const``` class.
 
 ```java
-    public final static String DEFAULT_ROOT_PATH = "D:\\tools\\hql\\projects\\BroadleafCommerce";
+    public final static String DEFAULT_INPUT_PATH = "D:\\tools\\hql\\projects\\BroadleafCommerce";
     public final static String DEFAULT_OUTPUT_PATH = "D:\\tools\\hql\\projects";
 ```
 If ```-i``` and ```-o``` is not specified, an error will be raised, but HBSniff will still try to execute according to these 2 default parametres.
