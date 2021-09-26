@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 * Quick Start
-* [Homepage](/)
+* [Front Page](/)
 * [For users](users.md)
 * [For developers](developers.md)
 
@@ -11,8 +11,8 @@
 * [Mapping Metrics](mappingMetrics.md)
 
 * Parsers
-* [HQLExtractor](hqlExtractor.md)
 * [EntityParser](entityParser.md)
+* [HQLExtractor](hqlExtractor.md)
 
 * Detector
 * [SmellDetector](smellDetector.md)

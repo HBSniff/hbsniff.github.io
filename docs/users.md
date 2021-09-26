@@ -35,3 +35,6 @@ OneByOne,
 MissingManyToOne,
 Pagination.       
 To exclude metrics, simply append "MappingMetrics" to the content of this parameter.      
+
+# Specify Export Filetypes
+An optional ```--type``` or ```-t``` could be provided to specify the file types of exportation. Available values are xls,csv,json. To export multiple types of fles, split the types by ','. For examples of export data, please refer to the [Output](./output.md) section.       
