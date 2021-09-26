@@ -29,6 +29,8 @@ Kang Yang, Ph.D. candidate, ECUST, 15921709583#163.com
 
 Ziyi Zhou, Ph.D. candidate, ECUST, zhouziyi#mail.ecust.edu.cn   
 
+# Cite This Tool
+Zijie Huang, Zhiqing Shao, Guisheng Fan, Huiqun Yu, Kang Yang, Ziyi Zhou. HBSniff: A Static Analysis Tool for Java Hibernate Object-Relational Mapping Code Smell Detection. Science of Computer Programming. Under Review. https://hbsniff.github.io/paper.pdf     
 
 # Acknowledgement
  This work was partially supported by the National Natural Science Foundation of China under Grant No. 61772200, and the Natural Science Foundation of Shanghai under Grant No. 21ZR1416300.
