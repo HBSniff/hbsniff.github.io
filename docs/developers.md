@@ -1,9 +1,9 @@
 # Guide for Developers
 
 ## Compilation
-1. Clone the GitHub repository of HBSniff. 
+1. Clone [the GitHub repository](https://github.com/HBSniff/HBSniff) of HBSniff. 
 2. Open it with an IDE, we suggest using IntelliJ IDEA. 
-3. Since the dependencies and compilation of the project is managed by Maven 5, a ```maven clean install``` command will automatically download dependencies and generate an executable jar file in the ```target``` folder, e.g., HBSniff-1.6.6-jar-with-dependencies.jar.
+3. Since the dependencies and compilation of the project is managed by Maven 5, a ```maven clean install``` command will automatically download dependencies and generate an executable jar file in the ```target``` folder, e.g., HBSniff-1.6.7-jar-with-dependencies.jar.
 
 ## Architecture
 ![architecture](architecture.png)

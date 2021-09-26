@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 * Quick Start
-* [Front Page](/)
+* [Intro](/)
 * [For users](users.md)
 * [For developers](developers.md)
 
