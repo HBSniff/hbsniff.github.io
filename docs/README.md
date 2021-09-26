@@ -23,12 +23,14 @@ Please submit Pull Requests or create issue tickets if any bug is found. Code co
 
 # Developers
 
-Zijie Huang, Ph.D. candidate, East China University of Science and Technology (ECUST), hzj#mail.ecust.edu.cn    
+Zijie Huang, Ph.D. candidate, East China University of Science and Technology (ECUST), hzj at mail.ecust.edu.cn    
 Homepage: http://hzjdev.github.io/
 
-Kang Yang, Ph.D. candidate, ECUST, 15921709583#163.com   
+Kang Yang, Ph.D. candidate, ECUST, 15921709583 at 163.com   
 
-Ziyi Zhou, Ph.D. candidate, ECUST, zhouziyi#mail.ecust.edu.cn   
+Ziyi Zhou, Ph.D. candidate, ECUST, zhouziyi at mail.ecust.edu.cn   
+
+(Please replace " at " with @ for e-mail, the at word is used instead to prevent junk mails.)      
 
 # Cite This Tool
 Zijie Huang, Zhiqing Shao, Guisheng Fan, Huiqun Yu, Kang Yang, Ziyi Zhou. HBSniff: A Static Analysis Tool for Java Hibernate Object-Relational Mapping Code Smell Detection. Science of Computer Programming. Under Review. https://hbsniff.github.io/paper.pdf     
