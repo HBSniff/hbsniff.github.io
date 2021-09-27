@@ -1,6 +1,8 @@
 # Guide for Developers
 
-## Compilation
+## Compilation       
+Video Demo of Compilation and Execution: https://doi.org/10.6084/m9.figshare.16682029         
+
 1. Clone [the GitHub repository](https://github.com/HBSniff/HBSniff) of HBSniff. 
 2. Open it with an IDE, we suggest using IntelliJ IDEA. 
 3. Since the dependencies and compilation of the project is managed by Maven 5, a ```maven clean install``` command will automatically download dependencies and generate an executable jar file in the ```target``` folder, e.g., HBSniff-1.6.7-jar-with-dependencies.jar.
@@ -8,7 +10,7 @@
 ## Architecture
 ![architecture](architecture.png)
 
-HBSniff is a consists of 5 major modules (sub-packages), i.e., ```model, parser, detector, metric, util```. First, users specify the path of projects and the directory of output. Then, the ```parsers``` of HQL and Hibernate entities construct the HBSniff AST ```models``` using ```JavaParser```. Afterwards, the ```models``` will be used to populate the context of code smell ```detectors``` and ```metrics```, and the detection and evaluation will be performed. Finally, the results will be transferred to Excel reports as well as csv and JSON data. 
+HBSniff consists of 5 major modules (sub-packages), i.e., ```model, parser, detector, metric, util```. First, users specify the path of projects and the directory of output. Then, the ```parsers``` of HQL and Hibernate entities construct the HBSniff AST ```models``` using ```JavaParser```. Afterwards, the ```models``` will be used to populate the context of code smell ```detectors``` and ```metrics```, and the detection and evaluation will be performed. Finally, the results will be transferred to Excel reports as well as csv and JSON data. 
 
 ## Implement a new smell detector
 

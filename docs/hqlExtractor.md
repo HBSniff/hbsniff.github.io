@@ -1,6 +1,6 @@
 # HQLExtractor
 ```List<HqlAndContext> getHqlNodes(List<CompilationUnit> cus)```       
-The HQL extractor locate the ```createQuery()``` method call which indicates potential HQL usage, and locate HQL in the context of the method and class containing the method call. Moreover, it finds the method that calls the method containing HQL.      
+The HQL extractor locates the ```createQuery()``` method call which indicates potential HQL usage. Afterwards, it also locates HQL in the context of the method and class containing the method call. Moreover, it finds the method that calls the method containing HQL.      
 
 # HqlAndContext
 ## Major Attributes of HQL
