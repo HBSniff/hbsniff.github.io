@@ -8,7 +8,7 @@ Inter-entity smells are caused by inappropriate definition of data retrieval str
 
 Problem:     
 
-```EAGER FetchType``` preloads all data in advance. However, they could be retrieved on demand to improve performance. 
+```EAGER FetchType``` preloads all data when the data class is initialized, even if some of them will never be accessed. To avoid performance issues (i.e., retrieving too much data in advance), data should be retrieved on demand. 
 
 Smelly Example:     
 ```java
@@ -31,7 +31,7 @@ class Student {
 ## Lacking Join Fetch
 Problem:      
 
-We should join the field annotated with ```EAGER FetchType``` by join fetch presented in HQL to avoid N+1 problems. 
+Fields annotated with ```EAGER FetchType``` should be joined by ```join fetch``` in HQL to be retrieved through one query using join. Otherwise, such fields would be retrieved by N additional queries if the parent object is initialized, resulting in the N+1 problem.
 
 Smelly Example:     
 ```java
@@ -116,6 +116,6 @@ class Student {
 # The N+1 Problem
 
 
-> The N + 1 problem occurs when an application gets data from the database, and then loops through the result of that data. That means we call to the database again and again and again. In total, the application will call the database once for every row returned by the first query (N) plus the original query ( + 1). 
+> The N + 1 problem occurs when an application retrieves a parent entity from the database, and then loops through a collection field of the entity containing N other entities. Hibernate may generate a query for every iteration to retrieve smelly entities, which means we call to the database recurrently. In total, the application will call the database once for every row (i.e., for N times) returned by the original query, and the plus one refers to the original query. This problem could lead to performance issue if the size of N is large. However, reducing N is not acceptable since we may need that large amount of data. The appropriate way to address it is to correctly configure the relationships between entities and the strategies of data fetching. For example, using the ```LAZY FetchType``` with specified ```BatchSize``` for on-demand batch retrieval. 
 
 For implementational details, please visit https://www.brentozar.com/archive/2018/07/common-entity-framework-problems-n-1/ 

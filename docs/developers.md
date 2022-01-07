@@ -10,7 +10,9 @@ Video Demo of Compilation and Execution: https://doi.org/10.6084/m9.figshare.166
 ## Architecture
 ![architecture](architecture.png)
 
-HBSniff consists of 5 major modules (sub-packages), i.e., ```model, parser, detector, metric, util```. First, users specify the path of projects and the directory of output. Then, the ```parsers``` of HQL and Hibernate entities construct the HBSniff AST ```models``` using ```JavaParser```. Afterwards, the ```models``` will be used to populate the context of code smell ```detectors``` and ```metrics```, and the detection and evaluation will be performed. Finally, the results will be transferred to Excel reports as well as csv and JSON data. 
+HBSniff consists of 3 major modules (sub-packages), i.e., ```model, parser, detector```. The general architecture is depicted in the figure. The light gray colored box represents the scope of HBSniff code, while the dark gray colored boxes are sub-packages of HBSniff. The blue-colored boxes are classes in the sub-packages, and the white-colored boxes are external libraries and resources.        
+
+First, users specify the path of the project to detect as input (the ```-i``` parameter) and the path of the output directory (the ```-o``` parameter). Then, the program constructs higher level abstractions (whose data models are available in the ```model``` sub-package) in the ```parser``` sub-package using ```JavaParser```. Meanwhile, it locates HQL in the context of the method and class containing the method call. Moreover, it finds the method that calls the method containing HQL (```CalledIn``` methods in the figure). Afterwards, the generated ```models``` will be used to populate the context of code smell ```detectors```. Finally, the detection and metric evaluation will be performed, and the results will be converted to Excel reports as well as csv and JSON data.          
 
 ## Implement a new smell detector
 
